@@ -1,0 +1,76 @@
+body {
+	width: 100%;
+	margin: 0px;
+ 	background-image: url("../img/register.jpg"); 
+/*	opacity:0.4;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+form {
+	position: relative;
+	top: 20px;
+	left: 200px;
+	text-align: center;
+	width: 40%;
+	height: 550px;	
+
+}
+
+fieldset {
+	text-align: center;
+	height: 550px;
+	border-radius: 30px;
+}
+
+legend {
+	font-size: 40px;
+	font-family: "黑体";
+	color: goldenrod;
+}
+.c1,.c3{
+	position: relative;
+	width: 60%;
+	height: 30px;
+	margin: 8px;
+	font-size: 16px;
+	top: 20px;
+	border-radius: 5px;
+	
+}
+
+
+.c2{
+	position: relative;
+	left: -40px;
+	font-size: 20px;
+	top: 20px;
+}
+.c4{
+	position: relative;
+	top: 20px;
+	font-size: 20px;
+	color: red;
+}
+
+.submit{
+	position: relative;
+	top: 40px;
+	width: 70%;
+	height: 50px;
+	font-size: 30px;
+	background: lightsteelblue;
+	color: darkcyan;
+	font-family: "黑体";
+	border-radius: 18px;
+}
+#sp1{
+	position: relative;
+	top: 25px;
+	font-family: "黑体";
+	font-size: 20px;
+	
+}
+
+
+
