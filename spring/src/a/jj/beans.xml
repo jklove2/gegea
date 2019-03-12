@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.2.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+	<!-- 把操作的对象放到IOC容器 <br>
+	属性说明: <br>
+	id属性:对象的唯一标识,遵循标识符命名规则<br> 
+	class属性:创建对象所使用的类,也就是说创建这个类的对象<br>
+	name属性:标识bean的名称,不同bean中的名字不能重复<br>
+	init-method属性:创建对象后初始化方式<br>
+	destroy-method属性:只针对单例有效,在调用对应方法时执行<br>
+	scope属性: singleton表示单例<br>
+	          
+	
+	 -->
+	<bean id="user1" name="user1" class="a.jj.User" init-method="init"
+		destroy-method="destroy" scope="singleton" lazy-init="true">
+	</bean>
+	<bean id="user2" class="a.jj.User"></bean>
+	<bean id="user3" class="a.jj.User"></bean>
+</beans>
