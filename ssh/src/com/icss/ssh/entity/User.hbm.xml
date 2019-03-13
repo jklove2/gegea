@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<!-- class指定POJO类和数据库表之间的对应 -->
+	<class name="com.icss.ssh.entity.User" table="user">
+
+		<!-- id指定数据库中表的主键,以及主键生成策略 -->
+		<id name="id">
+			<generator class="native" />
+		</id>
+
+		<!-- property指定表字段和POJO中的属性的对应 -->
+		<property name="username" type="java.lang.String">
+			<column name="username" not-null="true" />
+		</property>
+
+		<property name="password" type="java.lang.String">
+			<column name="password" not-null="true" />
+		</property>
+		<property name="age">
+			<column name="age" not-null="true" />
+		</property>
+
+	</class>
+
+</hibernate-mapping>
